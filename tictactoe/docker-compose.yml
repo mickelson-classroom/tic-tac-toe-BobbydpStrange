@@ -21,6 +21,7 @@ services:
       - STAGING=false 
     volumes:
       - /home/aubrey/data/swag:/config
+      -./default.conf:/config/nginx/site-confs/default.conf
     ports:
     - 0.0.0.0:3005:443
     restart: unless-stopped
